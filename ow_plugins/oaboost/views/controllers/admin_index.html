@@ -1,0 +1,110 @@
+{$adminLogo}
+{$contentMenu}
+{form name='config_form'}
+	<table class="ow_table_1 ow_form">
+	    <tr>
+	        <th class="ow_name ow_txtleft" colspan="3">
+	            <span class="ow_section_icon ow_ic_gear_wheel">{text key="oacompress+admin_settings_section_label"}</span>
+	        </th>
+	    </tr>
+	    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='compress_css'}
+	    	</td>
+            <td class="ow_value">
+	    		{input name='compress_css'}
+	    	</td>
+            <td class="ow_desc">{desc name='compress_css'}</td>
+	    </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='compress_js'}
+	    	</td>
+            <td class="ow_value">
+	    		{input name='compress_js'}
+	    	</td>
+            <td class="ow_desc">{desc name='compress_js'}</td>
+	    </tr>
+        {*<tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='compress_html'}
+	    	</td>
+            <td class="ow_value">
+	    		{input name='compress_html'}
+	    	</td>
+            <td class="ow_desc">{desc name='compress_html'}</td>
+	    </tr>*}
+            <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='encode_css_image'}
+	    	</td>
+            <td class="ow_value">
+	    		{input name='encode_css_image'}
+	    	</td>
+            <td class="ow_desc">{desc name='encode_css_image'}</td>
+	    </tr>
+        <tr>
+	        <th class="ow_name ow_txtleft" colspan="3">
+	            <span class="ow_section_icon ow_ic_gear_wheel">{text key="oacompress+admin_settings_cache_section_label"}</span>
+	        </th>
+	    </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='cache_storage'}
+	    	</td>
+            <td class="ow_value">
+                {if $storageAvail}
+	    		{input name='cache_storage'}
+                {else}
+                    NA
+                 {/if}
+	    	</td>
+            <td class="ow_desc">{desc name='cache_storage'}</td>
+	    </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='cache_db_queries'}
+	    	</td>
+            <td class="ow_value">
+                {if $storageAvail}
+	    		{input name='cache_db_queries'}
+                {else}
+                    NA
+                 {/if}
+	    	</td>
+            <td class="ow_desc">{desc name='cache_db_queries'}</td>
+	    </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='cache_pages_for_guests'}
+	    	</td>
+            <td class="ow_value">
+                {if $storageAvail}
+	    		{input name='cache_pages_for_guests'}
+                {else}
+                    NA
+                 {/if}
+	    	</td>
+            <td class="ow_desc">{desc name='cache_pages_for_guests'}</td>
+	    </tr>
+        <tr>
+	        <th class="ow_name ow_txtleft" colspan="3">
+	            <span class="ow_section_icon ow_ic_gear_wheel">{text key="oacompress+admin_settings_database_section_label"}</span>
+	        </th>
+	    </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'}">
+            <td class="ow_label">
+	    		{label name='optimize'}
+	    	</td>
+            <td class="ow_value">
+	    		{input name='optimize'}
+	    	</td>
+            <td class="ow_desc">{desc name='optimize'}</td>
+	    </tr>
+	    <tr>
+	    	<td colspan="3" class="ow_center">
+	    		{submit name="submit" class="ow_ic_save"}
+	    	</td>
+	    </tr>
+	</table>
+{/form}

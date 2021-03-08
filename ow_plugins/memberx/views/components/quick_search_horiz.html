@@ -1,0 +1,131 @@
+{style}
+{literal}
+
+    .ow_qs_header { 
+        padding-bottom: 20px; 
+    }
+
+    .ow_qs_field { 
+        padding-bottom: 15px; 
+    }
+
+    .ow_qs_label { 
+        padding: 0 10px 0 10px; 
+    }
+
+    .ow_qs_field input[type="text"] {
+        max-width: 70%;
+    }
+
+    .ow_qs_field input.ow_googlelocation_search_location
+    {
+        max-width:100%;
+    }
+
+   .ow_qs_field .ow_qs_miles {
+        width: 50px;
+        text-align: center;
+    }
+
+     .ow_qs_field .ow_qs_locationstr { 
+        width: 150px; 
+    }
+
+    form .ow_googlelocation_search_distance { 
+        text-align: center; 
+    }
+
+    form .ow_googlelocation_search_distance{
+        max-width: 50px;
+    }
+    
+    .ow_qs_btn .ow_qs_label {
+        padding: 6px 10px 0px;
+        display: inline-block;
+    }
+    
+    div .googlelocation_address_div{
+        display: inline-block !important;
+    }
+    
+    .ow_checkbox_group li {
+        width: auto !important;
+        padding: 5px;
+    }
+    
+    .gender-option ul {
+        display: inline-block !important;
+    }
+    
+    
+{/literal}
+{/style}
+
+<table class="ow_table_2">
+    <tr>
+        <td class="wo_left">
+<div class="wo_left">
+    {form name='QuickSearchForm'}
+
+  
+
+    <div class="clearfix">
+    <div class="hori_quick_search_block">
+                    {label name='accountType' class="hori_quick_search_label"}
+                    {input name='accountType' class="hori_quick_search_input"}
+                </div>
+
+    {foreach from=$questionList item=question}
+
+        {if  $question->name == 'sex'}
+            
+                <div class="hori_quick_search_block">
+                    {label name=$question->name class="hori_quick_search_label"}
+                    {input name=$question->name class="hori_quick_search_input"}
+                </div>
+         
+        {else if $question->name == 'birthdate'}
+             <div class="hori_quick_search_block">
+                <div class="hori_quick_search_label">{text key='memberx+age'}</div>
+                <div class="hori_quick_search_input">{input name='birthdate'}</div>
+                <div>{error name='birthdate'}</div>
+            </div>
+        {else if $question->name == 'googlemap_location'}
+            <div class="hori_quick_search_block">
+                <div class="hori_quick_search_input">{input name='googlemap_location'}</div>
+                <div class="hori_quick_search_input">{error name='googlemap_location'}</div>
+            </div>
+        {else}
+            <div class="hori_quick_search_block">
+                <div class="hori_quick_search_label">{label name=$question->name}</div>
+                <div class="ow_qs_value">{input name=$question->name}</div>
+            </div>
+        {/if}
+
+    {/foreach}
+    
+     {if $form->getElement('online') }
+        <div class="hori_quick_search_block" >
+            <span class="ow_qs_value">{input name='online'}<span class="ow_qs_checkbox_fake"></span></span>
+            <span class="hori_quick_search_label">{label name='online'}</span>
+        </div>
+    {/if}
+    
+    {if $form->getElement('with_photo') }
+        <div class="hori_quick_search_block" >
+            <span class="ow_qs_value">{input name='with_photo'}<span class="ow_qs_checkbox_fake"></span></span>
+            <span class="hori_quick_search_label">{label name='with_photo'}</span>
+        </div>
+    {/if}
+
+    
+    <div style="display: inline-block; width: 96px">
+        {submit name='search'}
+    </div>
+    
+    </div>
+    {/form}
+</div>
+            </td>
+    </tr>
+</table>

@@ -1,0 +1,29 @@
+{$menu}
+<div class="ow_wide ow_automargin">
+{form name="form"}
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="2">
+                <span class="ow_section_icon ow_ic_gear_wheel">{text key="watermarkpro+settings"}</span>
+            </th>
+        </tr>
+        
+        {foreach from=$form item=field}
+        {if $field instanceof Submit or $field instanceof HiddenField}{continue}{/if}
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {$field->getLabel()}
+            </td>
+            <td>
+                {input name=$field->getName()}<br />
+                {error name=$field->getName()}
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+        {submit name="submit"}
+        </div>
+    </div>
+{/form}

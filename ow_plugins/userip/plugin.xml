@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>User IP Tracker</name>
+    <key>userip</key>
+    <description>Displays IP address of each members in the profile based on their last login or Join IP address. Only Admin and Moderators can view. Mobile supported.</description>
+    <author>Purusothaman Ramanujam</author>
+    <authorEmail>purushoth.r@gmail.com</authorEmail>
+    <authorUrl>http://www.iYaffle.com</authorUrl>
+    <developerKey>1ee49389d3159fa543f7f3333a5c5a91</developerKey>
+    <build>6</build>
+    <copyright>(C) 2014 Purusothaman Ramanujam. All rights reserved.</copyright>
+    <versions>1.7.1,1.7.0, 1.6.0,1.5.0</versions>
+    <license>http://www.iYaffle.com</license>
+    <licenseUrl>http://www.iYaffle.com</licenseUrl>
+</plugin>

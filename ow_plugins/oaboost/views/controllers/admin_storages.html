@@ -1,0 +1,89 @@
+{$adminLogo}
+{$contentMenu}
+<div class="ow_info ow_stdmargin">
+{text key="oacompress+storage_tab_desc"}
+</div>
+<div style="display: none;">
+    <div id="oac_name">{text key="oacompress+info_name_text"}</div>
+    <div id="oac_count">{text key="oacompress+info_count_text"}</div>
+    <div id="oac_hits">{text key="oacompress+info_hits_text"}</div>
+    <div id="oac_misses">{text key="oacompress+info_misses_text"}</div>
+    <div id="oac_size">{text key="oacompress+info_size_text"}</div>
+    <div id="oac_status">{text key="oacompress+info_status_text"}</div>
+</div>
+<div class="ow_automargin">
+    <table id="roles" class="ow_table_2 ow_form ow_stdmargin ow_center">
+        <tr class="ow_tr_first">            
+            <th>{text key='oacompress+storage_name_label'} <a onclick="new OW_FloatBox({ $title:'{text key="oacompress+info_label"}', $contents: $('#oac_name'), width: '550px'})" href="javascript://" style="font-size: 8px">({text key="oacompress+info_label"})</a></th>
+            <th>{text key='oacompress+storage_entry_count_label'} <a onclick="new OW_FloatBox({ $title:'{text key="oacompress+info_label"}', $contents: $('#oac_count'), width: '550px'})" href="javascript://" style="font-size: 8px">({text key="oacompress+info_label"})</a></th>
+            <th>{text key='oacompress+storage_hits_label'} <a onclick="new OW_FloatBox({ $title:'{text key="oacompress+info_label"}', $contents: $('#oac_hits'), width: '550px'})" href="javascript://" style="font-size: 8px">({text key="oacompress+info_label"})</a></th>
+            <th>{text key='oacompress+storage_misses_label'} <a onclick="new OW_FloatBox({ $title:'{text key="oacompress+info_label"}', $contents: $('#oac_misses'), width: '550px'})" href="javascript://" style="font-size: 8px">({text key="oacompress+info_label"})</a></th>
+            <th>{text key='oacompress+storage_size_label'} <a onclick="new OW_FloatBox({ $title:'{text key="oacompress+info_label"}', $contents: $('#oac_size'), width: '550px'})" href="javascript://" style="font-size: 8px">({text key="oacompress+info_label"})</a></th>
+            <th>{text key='oacompress+storage_status_label'} <a onclick="new OW_FloatBox({ $title:'{text key="oacompress+info_label"}', $contents: $('#oac_status'), width: '550px'})" href="javascript://" style="font-size: 8px">({text key="oacompress+info_label"})</a></th>
+        </tr>
+        {foreach from=$storages item=storage}
+            <tr class="{cycle values='ow_alt1, ow_alt2'}">
+                <td><b>{$storage.label}</b> ({if $storage.speed == 1}<span class="ow_green">{text key='oacompress+fast_label'}</span>{else}<span class="ow_red">{text key='oacompress+slow_label'}</span>{/if})</td>
+                <td>{if $storage.status == 'active'}{$storage.entries}{else}NA{/if}</td>
+                <td>{if $storage.status == 'active'}<span class="ow_green">{$storage.hits}</span>{else}NA{/if}</td>
+                <td>{if $storage.status == 'active'}<span class="ow_red">{$storage.misses}</span>{else}NA{/if}</td>
+                <td>{if $storage.status == 'active'}{$storage.size}{else}NA{/if}</td>
+                <td>
+                    {if $storage.status == 'na'}
+                        <a href="javascript://" id="{$storage.id}_rq">{text key='oacompress+storage_requirements_label'}</a>
+                        <div style="display: none">
+                            <div id="{$storage.id}-rq-content">
+                                {$storage.requirements}
+                            </div>
+                        </div>
+                    {elseif $storage.status == 'nc'}
+                        <a href="javascript://" id="{$storage.id}">{text key='oacompress+storage_configure_label'}</a>
+                    {elseif $storage.status == 'avail'}
+                        <span class="ow_green">{text key='oacompress+storage_avail_label'}</span>
+                    {else}
+                        <span class="ow_green" style="font-weight: bold;">{text key='oacompress+storage_active_label'}</span>
+                    {/if}
+                </td>
+            </tr>		
+        {/foreach}
+    </table>
+</div>
+<div style="display: none">
+    <div id="mcd-content">
+        {form name='memcached'}
+        <table class="ow_table_1 ow_form">
+            <tr class="ow_tr_first">
+                <th class="ow_name ow_txtleft" colspan="3">
+                    <span class="ow_section_icon ow_ic_gear_wheel">{text key='oacompress+configure_memcached_form'}</span>
+                </th>
+            </tr>
+            <tr class="{cycle values='ow_alt1, ow_alt2'}">
+                <td class="ow_label">
+                    {label name='host'}
+                </td>
+                <td class="ow_value">
+                    {input name='host'}<br />
+                    {error name='host'}
+                </td>
+                <td class="ow_desc"></td>
+            </tr>
+            <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+                <td class="ow_label">
+                    {label name='port'}
+                </td>
+                <td class="ow_value">
+                    {input name='port'}<br />
+                    {error name='port'}
+                </td>
+                <td class="ow_desc"></td>
+            </tr>
+        </table>
+
+        <div class="clearfix ow_stdmargin">
+            <div class="ow_right">
+                {submit name="submit" class="ow_ic_save"}
+            </div>
+        </div>
+        {/form}
+    </div>
+</div>

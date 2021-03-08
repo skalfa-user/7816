@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>Custom redirect (#4539 by Skalfa)</name>
+    <key>cusredirect</key>
+    <description>Redirect site guests (not logged in users) to Join page when they click Search button on Quick Search or Advanced Search.</description>
+    <author>Skalfa</author>
+    <authorEmail>info@skadate.com</authorEmail>
+    <authorUrl>https://www.skadate.com</authorUrl>
+    <developerKey>99d6bdd5bb6468beaf118c4664dd92ff</developerKey>
+    <build>1</build>
+    <copyright>(C) 2018 Skalfa LLC. All rights reserved.</copyright>
+    <license>SEL</license>
+    <licenseUrl>http://www.skadate.com/sel.pdf</licenseUrl>
+</plugin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="langcsvimporter" label="Lang CSV import" language_tag="en" language_label="English">
+    <key name="langcsvimporter_page"><value>Lang CSV import</value></key>
+    <key name="xml_file"><value>Select xml file</value></key>
+    <key name="admin_import_page_menu"><value>Import</value></key>
+    <key name="admin_export_page_menu"><value>Export</value></key>
+    <key name="export_submit"><value>Submit</value></key>
+    <key name="success_xml_uploded"><value>Successfull uploaded</value></key>
+    <key name="download_label"><value>Download xlsx file</value></key>
+    <key name="download_xlsx_btn"><value>Download</value></key>
+    <key name="error_dowload_xlsx"><value>Error</value></key>
+    <key name="upload_xml_type_error"><value>You can only upload *.xml files</value></key>
+</prefix>

@@ -1,0 +1,25 @@
+Aug 18, 2015 - Favorites plugin build 6
+============
+* Oxwall 1.7.5 support added
+* Added blocked user error when adding to favorites
+
+Aug 28, 2014 - Favorites plugin build 5
+============
+* Oxwall 1.7.1 support added
+
+Jul 10, 2014 - Favorites plugin build 4
+============
+* Oxwall 1.7 support added
+
+Jan 11, 2014 - Favorites plugin build 3
+============
+* Oxwall 1.6 support added
+
+Mobile version support:
+* Mobile link Favorites in sidebar menu
+* Real time notifications implemented
+* Profile view Add to favorites / Remove from favorites button added
+
+Sep 2, 2013 - Favorites plugin build 1
+============
+Initial release

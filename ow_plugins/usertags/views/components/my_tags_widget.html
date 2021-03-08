@@ -1,0 +1,5 @@
+{foreach from=$tags item='tag'}
+    <a href="{$tag.url}" style="font-size:{$tag.size}px;line-height:{$tag.lineHeight}px;">{$tag.label}</a>
+{foreachelse}
+
+{/foreach}

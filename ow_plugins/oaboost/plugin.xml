@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin>
+    <name>0xArt Speed Optimizer</name>
+    <key>oacompress</key>
+    <description>The plugin optimizes your site to increase page performance</description>
+    <author>Sardar Madumarov</author>
+    <authorEmail>madumarov@gmail.com</authorEmail>
+    <authorUrl>http://oxart.net</authorUrl>
+    <developerKey>b6f31c468ff932aba0c1c809fb35a074</developerKey>
+    <build>300</build>
+    <copyright>Copyright (c) 2011 Sardar Madumarov. All rights reserved.</copyright>
+    <license>OSCL</license>
+    <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>

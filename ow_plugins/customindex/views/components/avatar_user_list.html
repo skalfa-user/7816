@@ -1,0 +1,27 @@
+<div class="ow_lp_avatars">
+    
+    {if empty($users)}
+        <div class="ow_nocontent">{text key='base+empty_user_avatar_list'}</div>
+    {else}
+       
+        {foreach from=$users item='user'}
+            <div class="ow_avatar">
+                <a href="{$user.url}">
+                    <div class="hover_info">
+                        <span class="name">{$user.title|escape}</span>
+                    </div>
+                    <img alt="{$user.title|escape}" title="{$user.title|escape}" src="{$user.src}">
+                </a>
+            </div>
+        {/foreach}
+
+        {if count($users)}
+            <div class="circle_user_view_all_btn">
+                <a href="{url_for_route for="base_user_lists:[list=>latest]"}">
+                    {text key="base+view_all"}
+                </a>
+            </div>
+        {/if}
+    {/if}
+    
+</div>

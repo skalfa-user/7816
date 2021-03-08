@@ -1,0 +1,70 @@
+If you continue to use this plugin, you are agreeing to comply with and be bound by the following terms and conditions of use.
+
+The term, ‘CodeMonster’ or ‘company’ or ‘us’ or ‘we’ refer to the owner of the plugin. The term ‘you’ refers to the customer.
+
+Your subscription to this plugin grants you non-exclusive limited license to use this plugin and other products sold through our 
+
+website (http://www.codemonster.club) by CodeMonster in accordance with these Terms & Conditions (the "license") issued by our company.
+
+We reserve the right to terminate subscriptions at our discretion if we feel the plugin is being used or distributed inappropriately.
+
+1. Plugin Licensing
+This plugin itself is licensed under the Oxwall Store Commercial License (https://developers.oxwall.com/store/oscl). While the PHP that makes up the plugin code is covered by this license, the video content and images used therein are proprietary, and protected under current copyright law.
+
+2. Automatic Upgrades
+Automatic Upgrades are available to customers who have purchased in accordance with the license they have purchased. You may not resell your plugin, or pugin's license key.
+
+3. Delivery
+After we have successfully processed your payment, you will be granted with a license key and you can download this plugin. This may take up to 1 hour to arrive, but usually happens within minutes of placing the order. If you do not receive your plugin after this time period, please contact us. You may then login to CodeMonsterPlugin.com to receive support, if you use the email address you used to purchase the plugin you will have instant access to all support related material.
+
+4. Ownership
+You may not claim intellectual or exclusive ownership rights to any of our products. All products are property of CodeMonster. They are provided “as is” without warranty of any kind, expressed or implied. We shall not be liable for any damages, including but not limited to, direct, indirect, special, incidental or consequential damages or losses that occur out of the use or inability to use our products.
+
+All PHP, CSS, and JavaScript files, brand imagery and images used are licensed under a proprietary license for our personal use and cannot be redistributed without express written consent from LeftLane Designs.
+
+License holders are not permitted to re-post support content or documentation on any external websites, social media outlets, etc. Posting screen captures of this content is also prohibited.
+
+This license does not grant permission to modify or redistribute our CodeMonster Plugin in any manner, digital, or otherwise.
+
+Violation will be grounds for immediate termination of the license and all access to the plugin, video content, support, and product updates will be discontinued.
+
+Unauthorized use or distribution of our website, plugin, or videos is strictly prohibited and violators will be prosecuted.
+
+You may not make the CodeMonster plugin available for public download.
+
+In short, you may use the plugin as-is. You are not, under any circumstances, and by no means permitted to embed, display, resell or distribute our plugin in any other manner.
+
+5. Site Content
+All site content, including videos, imagery, and documentation that is published on CodeMonster.club is the property of CodeMonster. Any replicated site content must be authorized in advanced. Content from this site shall not be used or exploited for commercial or non-commercial purposes without the prior written consent of CodeMonster.
+
+6. Refund Policy
+As we are offering non-tangible digital goods, we do not generally issue refunds after the purchase has been made. We will be happy to consider a refund within the first 30 days of your purchase if you are unable to get the plugin to install properly on your website or if the plugin fails to perform the basic functions as designed and you have worked with the product support team to try to resolve these issues. Refunds will be granted at the sole discretion of CodeMonster. No refunds will be given after 30 days from the initial purchase. Please note that by purchasing the plugin, you agree to the terms of the Refund Policy.
+
+7. Support
+CodeMonster offers this Oxwall plugin “as is” and with no implied meaning that they will function exactly as you would like or will be compatible with all 3rd party components and plugins. We do not offer support via email or otherwise support Oxwall Core or other Oxwall Plugins we have not developed.
+
+Support is offered via Chat in Oxwall.com. Purchasing a this plugin gives you access to our support resources and documentation. Support and automatic product updates are provided for a term of 1 month from the time of purchase. 
+
+Subscriptions must be renewed monthly in order to continue receiving support and product updates.
+
+8. Transactional Emails
+CodeMonster may on occasion send you email notifications related to your CodeMonster Plugin's subscription. These transactional emails may include notification of licensing changes, changes to our terms and conditions, license expiration notices and other transactional emails related to your purchase of this plugin.
+
+9. Price Changes
+CodeMonster reserves the right, at any time, to modify or discontinue, temporarily or permanently, a plugin with or without notice. Prices of all products are subject to change. Notice of price changes will be made on the site.
+
+10. Warranty
+Our plugin is guaranteed to function on a clean installation of Oxwall. We do not guarantee it will function with all 3rd party plugins or with all web browsers. We are not responsible for any plugin compatibility conflicts that may occur. It is our policy to support our plugins as best we can and we will provide support for 3rd party plugin conflicts at our discretion or as time allows. We are not responsible for any data loss that may occur as a result of installing this plugin.
+
+11. Acceptance
+By purchasing or subscribing to our product(s) you indicate that you have read and agree the Terms & Conditions detailed on this page.
+
+Fair Use Policy
+
+The CodeMonster Plugin is designed to be used by Oxwall and Skadate customers to provide their users more functionalities. 
+
+Therefore, you should have a direct access to the Admin panel to install this plugin.
+
+This plugin gies you the right to use in a domain only, if you need to use it in more of 1 domain, please buy all the extra keys that you need.
+
+If you are a web hosting company, please contact us to discuss tiered pricing to fit your needs.

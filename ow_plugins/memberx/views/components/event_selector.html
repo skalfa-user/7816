@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+Copyright 2015 Daniel Shum 
+Contact: denny.shum@gmail.com
+
+Licensed under the OSCL (the License); you may not 
+use this file except in compliance with the License.
+
+You may obtain a copy of the License at 
+
+        https://developers.oxwall.com/store/oscl
+
+
+Unless required by applicable law or agreed to in writing, software 
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+{if !$isAuthorized}
+
+    <span>{$upgradeMessage}</span>
+{else}
+
+<div style="position: relative" class="ow_txtcenter"><h1>{text key='memberx+invite_to_event'}</h1></div>
+<br/>
+<div>
+    <a class='add-new-event-btn' href="{$eventAddUrl}" target="_blank">
+        {decorator name='button' class='ow_ic_add' langLabel='memberx+create_new_event'}
+    </a>
+</div>
+<br/>
+
+<table class="ow_table_2">
+
+    <tr class="ow_tr_first">
+        <th class="ow_name ow_txtcenter" colspan="1">
+            <span class="ow_section_icon ow_ic_calendar">{$inviteTableTitle}</span>
+        </th>
+    </tr>
+    {if empty($eventList)}
+        <tr>
+            <td><div>{text key='memberx+you_have_not_created_any_event_yet'}</div></td>
+        </tr>
+    {/if}
+
+    {foreach from=$eventList item='item'}
+
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td>
+            <div style="position: relative">
+                <img class="ow_left" style="width: 56px; height: 56px;" alt="{$item->title}" src="{$item->imageUrl}">
+                <div style="width: 200px; height: 56px; position: absolute; top: 1px; left: 64px" class="ow_left ow_txtleft">
+                    <span class="font-size: 14px"><a href="{$item->viewUrl}" target="_blank">{$item->title}</a></span>
+                    <br/>
+                    <span class="ow_remark">{format_date timestamp=$item->startTimeStamp} - {format_date timestamp=$item->endTimeStamp}, </span>
+                    <span class="font-size: 14px">{$item->location}</span>
+                    <br/>
+                </div>
+                
+                {if !empty($joinedEventList[$item->id])}
+                    <span class="ow_lbutton ow_green" style="position: absolute; right: 0px; top: 0px; line-height: 20px;">{text key='memberx+attending'}</span>
+                {else if !empty($invitedEventList[$item->id])}
+                    <span class="ow_lbutton ow_green" style="position: absolute; right: 0px; top: 0px; line-height: 20px;">{text key='memberx+invited'}</span>
+                {else}
+                    <div style="position: absolute; right: 0px; top: 0px" event-id="{$item->id}" text-label="{text key='memberx+invited'}" user-id-to-invite="{$userIdToInvite}" class="invite-to-event-btn" id="invite-to-event-{$userIdToInvite}-{$item->id}">
+                        {decorator name='button' class='invite-to-event ow_ic_add' langLabel='memberx+invite'}
+                    </div>
+                {/if}
+            </div>
+
+        </td>
+    </tr>
+
+
+    {/foreach}
+
+</table>
+
+{form name={$formName}}
+{/form}
+
+
+<br/>
+{/if}
+
+{script}{literal}
+
+
+$('div.invite-to-event-btn').on('click', function(){
+    
+    var eventId = this.getAttribute('event-id');
+    var userId = this.getAttribute('user-id-to-invite');
+    var label = this.getAttribute('text-label');
+    
+    var form = $("form[name='invite-to-event-form']");
+    var userIdField = $("input[name='invite-to-event-user-id']");
+    var eventIdFiled = $("input[name='invite-to-event-event-id']");
+    var urlFiled = $("input[name='invite-to-event-process-url']");
+    
+    if (!eventId || !userId){
+    	return;
+    }
+    
+	eventIdFiled.val(eventId);
+    userIdField.val(userId);
+    var url = urlFiled.val();
+    var csrf_token = $("input[name='csrf_token']", form).val();
+    var form_name = $("input[name='form_name']", form).val();
+    var submitDiv = $(this);
+    var submitBtn = $('input.invite-to-event', submitDiv);
+    var inviteItemContent = submitDiv.parent();
+    var inviteLabel = '<span class="ow_lbutton ow_green" style="position: absolute; right: 0px; top: 0px; line-height: 20px;">' + label + '</span>';
+    
+    var data = {
+    	'csrf_token': csrf_token,
+    	'form_name': form_name,
+    	'invite-to-event-user-id': userId,
+    	'invite-to-event-event-id': eventId,
+    	'invite-to-event-process-url': url
+    };
+    
+    submitBtn.removeClass('ow_ic_add');
+    submitBtn.addClass('ow_inprogress');
+    
+    $.ajax({
+  		type: "POST",
+  		url: url,
+  		data: data,
+  		success: function(data){
+  			
+  			var message = data.message;
+  			if (data.result){
+  				submitDiv.remove();
+  				inviteItemContent.append(inviteLabel);
+  				OW.info(message);
+  			}else{
+  				OW.error(message);
+  			}
+  			
+  			
+  		},
+  		error: function (error) {
+
+    	},
+  		dataType: 'json'
+	}).done(function(){
+		submitBtn.removeClass('ow_inprogress');
+    	submitBtn.addClass('ow_ic_add');
+	});
+});
+
+
+
+$('a.add-new-event-btn').on('click', function(){
+    
+    if (EventInviteWindow){
+        EventInviteWindow.close();
+    }
+    
+
+});
+
+
+
+{/literal}{/script}

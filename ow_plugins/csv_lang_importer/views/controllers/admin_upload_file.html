@@ -1,0 +1,31 @@
+{$menu}
+
+<div class="ow_std_margin">
+    <div class="ow_superwide ow_automargin">
+        {block_decorator name="box" addClass="ow_stdmargin" label="Import Language" iconClass="ow_ic_new"}
+            {form name='csvimport_form'}
+                <table class="ow_table_2">
+                    <tr>
+                        <td>{label name='lang_name'}</td>
+                        <td>{input name='lang_name'}<br>{error name='lang_name'}</td>
+                    </tr>
+                    <tr>
+                        <td>{label name='lang_tag'}</td>
+                        <td>{input name='lang_tag'}<br>{error name='lang_tag'}</td>
+                    </tr>
+                    <tr>
+                        <td>{label name='column_number'}</td>
+                        <td>{input name='column_number'}<br>{error name='column_number'}</td>
+                    </tr>
+                    <tr class="ow_tr_last">
+                        <td>{label name='csv_file'}</td>
+                        <td>{input name='csv_file'}<br>{error name='csv_file'}</td>
+                    </tr>
+                </table>
+                <div class="ow_box ow_superwide" style="text-align:center;margin:0 auto 20px; display: block;">
+                    {submit name="send" class="ow_ic_save"}
+                </div>
+            {/form}
+        {/block_decorator}
+    </div>
+</div>

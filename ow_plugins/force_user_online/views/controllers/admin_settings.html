@@ -1,0 +1,56 @@
+{style}
+{literal}
+    .operation_progress
+    {
+        background-color: #e6f2ff;
+        width:  60px;
+        height: 40px;
+    }
+{/literal}
+{/style}
+
+{form name="settings-form"}
+    {$menu}
+    <div class="ow_stdmargin" style="width: 40%">
+        <div id="amountOnlineUsers_div">
+            {label name='amountOnlineUsers_txt'}
+            {input name='amountOnlineUsers_txt'}
+        </div>
+        <div id="action_buttons_div">
+            <span class="ow_right">{submit name='deleteFromOnline_btn'}</span>
+            <span class="ow_left">{submit name='addToOnline_btn'}</span>
+        </div>
+        <table style="margin-top: 40px" class="ow_table_2">
+            <tr>
+                <td colspan="3">
+                    {text key='force+current_operation_info'}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {text key='force+rest'}
+                </td>
+                <td>
+                    {text key='force+total'}
+                </td>
+                <td>
+                    {text key='force+status'}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="" id="current_div"></div>
+                </td>
+                <td>
+                    <div class="" id="total_div"></div>
+                </td>
+                <td>
+                    <div class="" id="status_div"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>{text key='force+total_fake_count'}<span id="totalOnlineUsersCount"></span></div>
+{/form}
+
+

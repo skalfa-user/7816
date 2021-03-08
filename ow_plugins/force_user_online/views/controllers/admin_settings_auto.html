@@ -1,0 +1,77 @@
+{$menu}
+{form name='settings-form-auto'}
+
+
+    <table border="2" class="ow_table_2" style="width: 85%; margin-top: 20px; margin-bottom: 0px">
+        <tbody>
+        <tr >
+            <td width="5%"></td>
+            <td width="20%">
+                <div >
+                    {label name='amountOnlineUsers_txt'}
+                </div>
+            </td>
+
+            <td width="20%">
+                <div  >
+                    {label name='hours_sb'}
+                </div>
+            </td>
+
+            <td width="20%">
+                <div>
+                    {label name='minutes_sb'}
+                </div>
+            </td>
+
+            <td width="20%">
+                <div >
+                    {label name='actions_sb'}
+                </div>
+            </td>
+
+            <td width="*">
+                <div>
+                    {text key='force+action'}
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td ></td>
+
+            <td >
+                <div >
+                    {input name='amountOnlineUsers_txt' } {error name='amountOnlineUsers_txt' }
+                </div>
+            </td>
+
+            <td >
+                <div  >
+                    {input name='hours_sb' } {error name='hours_sb' }
+                </div>
+            </td>
+
+            <td>
+                <div >
+                    {input name='minutes_sb' } {error name='minutes_sb'}
+                </div>
+            </td>
+
+            <td >
+                <div >
+                    {input name='actions_sb' } {error name='actions_sb'}
+                </div>
+            </td>
+
+            <td >
+                <div>
+                    {submit name='createAction_btn' class='ow_ic_add'}
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {$timeTableComponent}
+
+
+{/form}

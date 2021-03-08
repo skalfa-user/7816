@@ -1,0 +1,44 @@
+{if empty($list)}
+
+<div class="ow_nocontent">
+    {text key="ucarousel+no_users"}
+</div>
+
+{else}
+<div class="uc-shape-{$shape}">
+    <div class="uc-carousel-wrap uc-size-{$size}">
+        <ul id="{$uniqId}" class="uc-carousel uc-carousel-size" style="visibility: hidden">
+            {foreach from=$list item="item"}
+            <li class="uc-item uc-border-radius ow_border uc-avatar-size ow_small ow_bg_color" {if !empty($item.uavatar)}data-pid="{$item.uavatar.photoId}"{/if}>
+                <div class="uc-item-content">
+                    <img src="{$item.thumb}" class="us-item-image uc-border-radius" alt="{$item.alt|escape:quotes}" />
+
+                    <div class="uc-info-wrap">
+                        <div class="uc-info uc-line-height">
+                            <div class="uc-info-line1">
+                                <a href="{$item.url}" class="uc-info-name">{$item.displayName}</a>
+                            </div>
+                            <div class="uc-info-line2">
+                                {if !empty($item.sex)}
+                                    {$item.sex}{if !empty($item.birthdate)},{/if}
+                                {/if}
+                                
+                                {if !empty($item.birthdate)}
+                                    {text key="ucarousel+list_ages" age=$item.birthdate}
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+
+                    {if $item.online}
+                        <div class="uc-online">
+                            {online_now userId=$item.userId}
+                        </div>
+                    {/if}
+                </div>
+            </li>
+            {/foreach}
+        </ul>
+    </div>
+</div>
+{/if}

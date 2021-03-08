@@ -1,0 +1,18 @@
+<div class="clearfix">
+    <div class="ow_right ow_stdmargin"><a href="http://oxcandystore.com/?plugin=ocs-favorites"><img src="{$logo}" /></a></div>
+</div>
+
+<div class="ow_wide ow_automargin">
+{block_decorator name='box' langLabel='ocsfavorites+settings' iconClass='ow_ic_gear_wheel'}
+{form name='settings-form'}
+<table class="ow_table_1">
+    <tr>
+        <td>{input name='canView'} {label name='canView'}</td>
+    </tr>
+    <tr>
+        <td class="ow_txtright">{submit name='save'}</td>
+    </tr>
+{/form}
+</table>
+{/block_decorator}
+</div>

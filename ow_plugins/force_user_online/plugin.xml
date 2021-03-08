@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>Force user online</name>
+    <key>force</key>
+    <description>Plugin allows to indicate amount of users to be online.
+        It’s feature is that you can indicate big amount of users and not to worry about the server load as the plugin adds users by portions.
+        You can track the addition of the users. You can exclude users added to be online as well
+    </description>
+    <author>Sergey Pryadkin</author>
+        <authorEmail>GiperProger@gmail.com</authorEmail>
+        <authorUrl>https://developers.oxwall.com/user/GiperProger</authorUrl>
+        <developerKey>5a2823209beb0450c79a1c033ed5c49c</developerKey>
+    <build>20</build>
+    <copyright>(C) 2017 Sergey Pryadkin. All rights reserved.</copyright>
+    <license>OSCL</license>
+        <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>

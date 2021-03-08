@@ -1,0 +1,17 @@
+<div class="camera_wrap">
+    {foreach $banners as $banner}
+        <div data-src="{$url}{$banner->name}">
+            <div class="container_wrap">
+                <div class="header_slogan clearfix">
+                    {text key=$banner->html}
+                </div>
+            </div>
+        </div>
+    {/foreach}
+</div>
+{script}
+    jQuery('.camera_wrap').camera({
+        pagination: false,
+        height: '553',
+    });
+{/script}

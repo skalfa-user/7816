@@ -1,0 +1,44 @@
+{style}
+{literal}
+
+.asdf
+{
+background-color: #D4D4D4;
+}
+
+.asdf2
+{
+background-color: #E6E6E6;
+}
+
+
+
+
+
+{/literal}
+{/style}
+
+
+<table border="2" class="ow_table_2" style="width: 85%; ">
+    <tbody>
+    {foreach from=$actionsList item='action' name='action'}
+    <tr class="asdf2" onmouseover="$('span.del-cont', this).show();" onmouseout="$('span.del-cont', this).hide();">
+        <td width="4.8%" class="asdf" ><strong>{$smarty.foreach.action.iteration}.</strong></td>
+        <td width="19.2%" >{$action->amount}</td>
+        <td width="19.5%" >{$action->hours}</td>
+        <td width="19.3%" >{$action->minutes}</td>
+        <td width="19.4%">{$action->action}</td>
+        <td width="*" class="">
+            <div>
+                <span class="del-cont" style="display: none;">
+                    <a class="ow_lbutton ow_red" href="{url_for for="FORCE_CTRL_Admin:deleteAction"}?actionId={$action->id}"
+                        onclick="return(confirm('{text key="admin+are_you_sure"}'));">
+                        {text key="admin+delete"}
+                    </a>
+                </span>
+            </div>
+        </td>
+    </tr>
+    {/foreach}
+    </tbody>
+</table>

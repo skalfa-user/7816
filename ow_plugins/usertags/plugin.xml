@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>User tags</name>
+	<key>usertags</key>
+	<description>Allows users to add tags</description>
+    <author>Oxwall Accessories</author>
+    <authorEmail>Admin@OwAccessories.com</authorEmail>
+	<authorUrl>http://www.OwAccessories.com</authorUrl>
+	<developerKey>21e4894be2f00b1f270b7ff7e658aecf</developerKey>
+    <build>10020</build>
+    <copyright>(C) 2013 Oxwall Accessories. All rights reserved.</copyright>
+    <license>The BSD License</license>
+    <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
+</plugin>

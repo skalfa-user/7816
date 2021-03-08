@@ -1,0 +1,260 @@
+.uc-item[data-pid] .uc-item-content {
+    cursor: pointer;
+}
+
+.uc-item[data-pid] .uc-item-content .uc-info {
+    cursor: auto;
+} 
+
+.roundabout-holder
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roundabout-moveable-item
+{
+    cursor: pointer;
+    line-height: 12px;
+}
+
+.roundabout-in-focus
+{
+    cursor: auto;
+}
+
+html .uc-carousel
+{
+    height: 210px;
+    width: 85%;
+    margin: 0px auto;
+}
+
+html body .uc-border-radius {
+    border-radius: 4px;
+}
+
+html body .uc-item
+{
+    border-width: 1px;
+    text-align: center;
+    overflow: hidden;
+    /*box-shadow: 0 2px 6px #585858;*/
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 0px;
+}
+
+.uc-item-content {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+}
+
+.us-item-image {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.uc-info-wrap {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+    padding: 40px 0px 8px;
+    
+    /*background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .75) 100%);*/
+    
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)) repeat scroll 0 0 transparent;
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.4)) repeat scroll 0 0 transparent;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.4)) repeat scroll 0 0 transparent;
+    background: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.4)) repeat scroll 0 0 transparent;
+}
+
+div.uc-info
+{
+    color: #fff;
+
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    -moz-text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    -webkit-text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    
+    font: normal 12px arial,sans-serif;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.uc-online {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.uc-size-small div.uc-info
+{
+    
+}
+
+html body .uc-info-line1 .uc-info-name {
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+html body .uc-size-medium .uc-info-line1 {
+    font-size: 16px;
+}
+
+html body .uc-size-small .uc-info-line1 {
+    font-size: 14px;
+}
+
+html body .uc-size-small .uc-info-wrap {
+    padding-bottom: 5px;
+}
+
+html body .uc-size-small .uc-info-line2 {
+    font-size: 10px;
+}
+
+.roundabout-in-focus .uc-info
+{
+    display: block;
+}
+
+.uc-size-small div.uc-info
+{
+    /*line-height: 1.4em;*/
+}
+
+.uc-size-medium div.uc-info
+{
+    /*line-height: 1.8em;*/
+}
+
+.uc-size-big div.uc-info
+{
+    /*line-height: 2em;*/
+}
+
+/* Shapes */
+
+.uc-shape-waterWheel
+{
+
+}
+
+.uc-shape-waterWheel .uc-carousel-wrap
+{
+
+}
+
+.uc-shape-waterWheel .uc-size-small
+{
+    height: 510px;
+    overflow: hidden;
+}
+
+.uc-shape-waterWheel .uc-size-medium
+{
+    height: 530px;
+    overflow: hidden;
+}
+
+.uc-shape-waterWheel .uc-size-big
+{
+    height: 580px;
+    overflow: hidden;
+}
+
+.uc-shape-waterWheel .uc-size-small .uc-carousel
+{
+    height: 700px;
+    margin-top: -100px;
+}
+
+.uc-shape-waterWheel .uc-size-medium .uc-carousel
+{
+    height: 680px;
+    margin-top: -75px;
+}
+
+.uc-shape-waterWheel .uc-size-big .uc-carousel
+{
+    height: 720px;
+    margin-top: -70px;
+    margin-bottom: -70px;
+}
+
+.uc-shape-conveyorBeltLeft .uc-size-big
+{
+    margin-left: 25px;
+}
+
+.uc-shape-conveyorBeltRight .uc-size-big
+{
+    margin-right: 25px;
+}
+
+.uc-shape-diagonalRingLeft .uc-size-big, .uc-shape-diagonalRingRight .uc-size-big
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.uc-shape-diagonalRingLeft .uc-size-medium, .uc-shape-diagonalRingRight .uc-size-medium
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.uc-shape-diagonalRingLeft .uc-size-small, .uc-shape-diagonalRingRight .uc-size-small
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.uc-shape-rollerCoaster .uc-size-big
+{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.uc-shape-rollerCoaster .uc-size-medium
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.uc-shape-rollerCoaster .uc-size-small
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.uc-shape-tearDrop .uc-size-big
+{
+    margin-bottom: 30px;
+}
+
+.uc-shape-tearDrop .uc-size-medium
+{
+    margin-bottom: 20px;
+}
+
+.uc-shape-tearDrop .uc-size-small
+{
+    margin-bottom: 10px;
+}
+
+html .ow_chat_dialog_wrap {
+    z-index: 101;
+}

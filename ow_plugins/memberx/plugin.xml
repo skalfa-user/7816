@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>Member X</name>
+    <key>memberx</key>
+    <description>New member page.</description>
+    <author>Daniel</author>
+    <authorEmail>kahmond.shum@gmail.com</authorEmail>
+    <authorUrl>funpica.com</authorUrl>
+    <developerKey>f0a10f3b14a4aa7d79eb8352819d048c</developerKey>
+    <build>28</build>
+    <copyright>Daniel</copyright>
+    <license>OSCL</license>
+    <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>

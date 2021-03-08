@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+	<name>Hide admin</name>
+	<key>hideadmin</key>
+	<description>This plugin hide admin and moderators on search results and block admin and
+        moderators profile for other members and removes from my matches.
+    </description>
+    <author>Skalfa LLC</author>
+    <authorEmail>oxwall@skalfa.com</authorEmail>
+	<authorUrl>http://www.skalfa.com</authorUrl>
+	<developerKey>5a2823209beb0450c79a1c033ed5c49c</developerKey>
+    <build>20</build>
+    <copyright>(C) 2009 Skalfa LLC. All rights reserved.</copyright>
+    <license>OSCL</license>
+    <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>
+
+
+	

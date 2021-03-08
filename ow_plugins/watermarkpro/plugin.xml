@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Photos Watermark Pro</name>
+	<key>watermarkpro</key>
+	<description>Add watermark image and/or text to uploaded photos</description>
+	<author>Senior Developer</author>
+    <authorEmail>oxwallplugins@codemonster.club</authorEmail>
+	<authorUrl>http://www.codemonster.club</authorUrl>
+	<developerKey>c0217df8e170f1afb5f926243f5b740d</developerKey>
+    <build>4</build>
+    <copyright>(C) 2016 Codemonster. All rights reserved.</copyright>
+	<license>OSCL</license>
+    <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>

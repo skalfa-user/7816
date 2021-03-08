@@ -1,0 +1,56 @@
+
+{form name=$formName}
+    
+    
+    <table class="ow_table_2">
+        
+        <tr class="ow_tr_first">
+        <th class="ow_name ow_txtleft" colspan="4">
+            <span class="ow_section_icon ow_ic_gear_wheel">{$title}</span>
+        </th>
+    </tr>
+            {assign var="ordinal" value="0"}
+            {foreach from=$elementList item='item'}
+            
+                {if $item->getAttribute("type") == "hidden"}
+        
+                {else}
+                {assign var="ordinal" value=$ordinal+1}
+                <tr class="{cycle values='ow_alt1,ow_alt2'}">
+
+                    <td style="width:44px">
+                          {$ordinal}
+                    </td>
+                    
+                    
+                    <td style="width:216px">
+                        <div class="ow_txtright">{$item->getLabel()}</div>
+                    </td>
+
+                    <td>
+                        <div class="ow_left ow_txtleft" style="width:100%">{input name=$item->getName()}</div>
+                        <div style="height:1px;"></div>
+                        <div class="ow_left ow_small">{error name=$item->getName()}</div>
+                        
+                    </td>
+                    
+                    <td>
+                        {if !empty($configLink) && $configLink[$item->getName()]}
+                            <a target="_blank" href="{$configLink[$item->getName()]['link']}">{$configLink[$item->getName()]['text']}</a>
+                        {/if}
+                    </td>
+                </tr>
+
+                {/if}
+    
+            {/foreach}
+            
+        </table>
+        
+        {if $writable}
+            <div style="text-align: center;padding: 5px;">{submit name='submit'}</div>
+        {/if}
+    
+    {/form}
+    
+    <br/>

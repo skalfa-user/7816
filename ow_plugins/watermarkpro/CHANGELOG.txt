@@ -1,0 +1,12 @@
+VERSION 4
+    FIX: "User can disable" option was missing in admin panel.
+
+VERSION 3
+    FIX: Preview displays correctly now.
+    FIX: Link to help page is now updated.
+
+VERSION 2
+    APP FIX. Photos uploaded from apps are watermarked too.
+
+VERSION 1
+    INITIAL VERSION

@@ -1,0 +1,45 @@
+User Carousel 2020, 2016-01-14:
+
+Enhancements:
+- SEO enhancements: `<div>` tags with bacground images were replaced with `<img>` tags with `alt` attribute
+- Online indicator
+- Several minor enhancements
+
+
+User Carousel 2010, 2015-05-05:
+
+Enhancements:
+- Do not show users who are not allowed to use site ( not approved, with not verified email )
+- Several minor enhancements
+
+Bug Fixes:
+- Carousel overlaps other elements
+- Minor fixes
+
+
+User Carousel 2000, 2014-12-23:
+
+Enhancements:
+- Hot List support: new list type added
+- Avatar History support: clicking on user avatar in the carousel will open photo popup
+- Several minor enhancements
+
+Bug Fixes:
+- Minor fixes
+
+
+User Carousel 1433, 2014-08-25:
+
+Enhancements:
+- Oxwall 1.7.1 support
+- Several minor enhancements
+
+Bug Fixes:
+- Animation bug fix
+- Minor fixes
+
+
+User Carousel 1435, 2014-08-26:
+
+Bug Fixes:
+- Group users widget disappears

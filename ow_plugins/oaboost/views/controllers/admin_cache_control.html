@@ -1,0 +1,66 @@
+{style}
+{literal}
+.oacompress_form .ow_value{
+    text-align:center;
+}
+.oacompress_form .ow_label{
+    width:35% !important;
+}
+
+.oacompress_form .ow_desc{
+    width:45% !important;
+}
+.oacompress_form label{
+    cursor:pointer;
+}
+{/literal}
+{/style}
+{$adminLogo}
+{$contentMenu}
+<form name="oacache" action="" method="post">
+<table class="ow_table_1 ow_form oacompress_form">
+    <tr>
+        <th class="ow_name ow_txtleft" colspan="3">
+            <span class="ow_section_icon ow_ic_gear_wheel">{text key="oacompress+admin_cache_control_section_label"}</span>
+        </th>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_compress">{text key="oacompress+admin_cache_control_btn_oacompress_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="oacompress" id="oa_compress" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_oacompress_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_template">{text key="oacompress+admin_cache_control_btn_template_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="mode[]" value="{$checkboxData.oa_template}" id="oa_template" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_template_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_theme">{text key="oacompress+admin_cache_control_btn_theme_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="mode[]" value="{$checkboxData.oa_theme}" id="oa_theme" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_theme_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_lang">{text key="oacompress+admin_cache_control_btn_lang_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="mode[]" value="{$checkboxData.oa_lang}" id="oa_lang" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_lang_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_dbcache">{text key="oacompress+admin_cache_control_btn_dbcache_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="mode[]" value="{$checkboxData.oa_dbcache}" id="oa_dbcache" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_dbcache_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_plugin">{text key="oacompress+admin_cache_control_btn_plugin_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="mode[]" value="{$checkboxData.oa_plugin}" id="oa_plugin" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_plugin_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_label"><label for="oa_all">{text key="oacompress+admin_cache_control_btn_all_label"}</label></td>
+        <td class="ow_value"><input type="checkbox" name="oa_all" id="oa_all" /></td>
+        <td class="ow_desc">{text key="oacompress+admin_cache_control_btn_all_desc"}</td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'}">
+        <td class="ow_value" colspan="3"><div class="ow_right">{decorator name="button" type="submit" langLabel="oacompress+clear_btn_label" id="oa_all"}</div></td>
+    </tr>
+</table>
+</form>

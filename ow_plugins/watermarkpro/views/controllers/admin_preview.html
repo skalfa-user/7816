@@ -1,0 +1,19 @@
+{$menu}
+<div class="ow_superwide ow_automargin" style="overflow: visible; float:left;">
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="2">
+                <span class="ow_section_icon ow_ic_gear_wheel">{text key="watermarkpro+settings_preview"}</span>
+            </th>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+				{if $preview!=""}
+					<img src="{$preview}"/>
+				{else}
+					{text key="watermarkpro+settings_enable_image_or_text_watermark"}
+				{/if}
+            </td>
+		</tr>
+    </table>
+</div>	

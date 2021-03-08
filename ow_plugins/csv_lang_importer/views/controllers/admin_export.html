@@ -1,0 +1,36 @@
+{$menu}
+
+<div class="ow_superwide ow_automargin">
+    <div class="ow_stdmargin">
+        {form name='export-form'}
+            <table class="ow_table_2">
+                <tr class="ow_tr_first">
+                    <td>{label name='xml_file'}</td>
+                    <td>{input name='xml_file'}<br>
+                        {error name='xml_file'}
+                    </td>
+                </tr>
+            </table>
+            <div class="clearfix ow_submit ow_stdmargin">
+                <div class="ow_right">
+                    {submit name="submit"}
+                </div>
+            </div>
+        {/form}
+    </div>
+
+    {if $isSubmit}
+        <div class="ow_langcsvimporter_download_wrap">
+            <h1 class="ow_stdmargin ow_center">
+                {text key='langcsvimporter+download_label'}
+            </h1>
+            <div class="clearfix ow_submit ow_stdmargin">
+                <div class="ow_right">
+                    <a href="{url_for_route for='langcsvimporter.admin.download'}">
+                        {decorator name='button' class='ow_ic_save' langLabel='langcsvimporter+download_xlsx_btn'}
+                    </a>
+                </div>
+            </div>
+        </div>
+    {/if}
+</div>

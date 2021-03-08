@@ -1,0 +1,40 @@
+language: node_js
+node_js:
+  - "6.9.2"
+
+dist: trust
+sudo: required
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+cache:
+  directories:
+    — application/node_modules
+    — application/plugins
+
+notifications:
+ slack: skalfa:PZVEzM7ns45AopWkhhld5swe
+
+branches:
+  only:
+  - master
+
+before_script:
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
+ - cd application/
+ - cp application.tmpl.config.json application.config.json
+ - cp package.tmpl.json package.json
+ - npm run setup_travis
+ - npm run prepare_travis
+ - node e2e/server/server.js &
+ - npm run browser &
+
+script: 
+  - npm run test-ci
+  - npm run e2e

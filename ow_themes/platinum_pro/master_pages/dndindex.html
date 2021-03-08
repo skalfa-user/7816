@@ -1,0 +1,88 @@
+<div class="ow_page_wrap">
+    <div class="ow_page_padding">
+        <div class="ow_header_wrap">
+            <div class="ow_header">
+                <div class="ow_site_panel">
+                    {component class='BASE_CMP_Console'}
+                </div>
+                <div class="ow_header_pic_wrap">
+                    <div class="ow_header_pic"><a href="{$siteUrl}" class="logo_url"></a></div>
+                </div>
+                <div class="ow_menu_wrap">{$main_menu}</div>
+            </div>
+        </div>
+        <div class="ow_page_container">
+            <div class="ow_canvas">
+                <div class="ow_page ow_bg_color clearfix">
+                    {if $heading}<h1 class="ow_stdmargin {$heading_icon_class}">{$heading}</h1>{/if}
+                    <div class="ow_dndindex clearfix">
+                        {$content}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ow_footer">
+    <div class="ow_canvas">
+        <div class="ow_page clearfix">
+            <div class="footer_item">
+                <div class="title">
+                    <!--footer_block_title_1-->
+                    {text key='slpremiumtheme+footer_block_title_1'}
+                </div>
+                <div class="footer_menu_links">
+                    {$bottom_menu}
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="title">
+                    <!--footer_block_title_2-->
+                    {text key='slpremiumtheme+footer_block_title_2'}
+                </div>
+                <!--footer_block_links_2-->
+                {text key='slpremiumtheme+footer_block_links_2'}
+            </div>
+            <div class="footer_item">
+                <div class="title">
+                    <!--footer_block_title_3-->
+                    {text key='slpremiumtheme+footer_block_title_3'}
+                </div>
+                <!--footer_block_links_3-->
+                {text key='slpremiumtheme+footer_block_links_3'}
+            </div>
+            <div class="footer_social_item">
+                <div class="title">
+                    <!--footer_block_title_4-->
+                    {text key='slpremiumtheme+footer_block_title_4'}
+                </div>
+                <!--footer_block_soc_links_4-->
+                {text key='slpremiumtheme+footer_block_soc_links_4'}
+            </div>
+
+            <div class="footer_copyright">
+                <div class="ow_copyright">
+                    {text key='base+copyright'}
+                </div>
+                {$bottomPoweredByLink}
+            </div>
+        </div>
+    </div>
+</div>    
+{decorator name='floatbox'}
+<script>
+    $(document).ready(function() {
+        SmartMenuColor();
+        $(window).scroll(function() {
+            SmartMenuColor();
+        });
+        function SmartMenuColor() {
+            var winScroll = $(window).scrollTop();
+            if (winScroll > 0) {
+                $('.ow_site_panel_wrap').addClass('site_panel_wrap_bg_color');
+            } else {
+                $('.ow_site_panel_wrap').removeClass('site_panel_wrap_bg_color');
+            }
+        }
+    });
+</script>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="memberx" label="Member X" language_tag="en" language_label="English"><key name="action_addfriend"><value>Add friend</value></key><key name="action_addfriend_signin_required"><value>You need to sign in to add friends</value></key><key name="action_block"><value>Block</value></key><key name="action_block_signin_required"><value>You need to sign in to block users</value></key><key name="action_follow"><value>Follow</value></key><key name="action_follow_signin_required"><value>You need to sign in to follow users</value></key><key name="action_removefriend"><value>Remove from friends</value></key><key name="action_removefriend_signin_required"><value>You need to sign in to remove friends</value></key><key name="action_unblock"><value>Unblock</value></key><key name="action_unblock_signin_required"><value>You need to sign in to unblock users</value></key><key name="action_unfollow"><value>Unfollow</value></key><key name="action_unfollow_signin_required"><value>You need to sign in to unfollow users</value></key><key name="addfriend_complete_message"><value>Friend request was sent</value></key><key name="admin_empty_position"><value>Empty</value></key><key name="admin_settings_description"><value>&lt;p style="margin-bottom: 32px;"&gt;Manage quick search widget. Questions below are common for all account types on the site&lt;br&gt;
+	&lt;span class="ow_highlight"&gt;Drag'n'Drop&lt;/span&gt; questions into Quick Search layout to add&lt;br&gt;
+	&lt;span class="ow_highlight"&gt;Drag'n'Drop&lt;/span&gt; questions outside of widget to delete from Quick Search&lt;/p&gt;</value></key><key name="advanced_search"><value>Advanced Search</value></key><key name="age"><value>Age</value></key><key name="age_range_incorrect"><value>Please fill correct age range</value></key><key name="age_range_incorrect_values"><value>Please fill age range from {$min} to {$max}</value></key><key name="block_complete_message"><value>User blocked</value></key><key name="days_ago"><value>days</value></key><key name="distance"><value>Distance</value></key><key name="follow_complete_message"><value>You are now following {$displayName}</value></key><key name="general_settings"><value>General Settings</value></key><key name="hide_user_activity"><value>Hide user activity after</value></key><key name="kms"><value>kms</value></key><key name="latest"><value>Latest activity</value></key><key name="load_earlier_profiles"><value>Load earlier profiles</value></key><key name="map"><value>Map</value></key><key name="match_compatibility"><value>Compatibility</value></key><key name="menu_item_search"><value>Search</value></key><key name="miles"><value>miles</value></key><key name="mobile_menu_item_search"><value>Search</value></key><key name="mobile_no_users_found"><value>No people found. Please try a different search for more results.</value></key><key name="new_search"><value>Different search</value></key><key name="no_users_found"><value>No people found.&lt;br /&gt;Please try a &lt;a href="{$searchUrl}"&gt;different search&lt;/a&gt; for more results.</value></key><key name="online_only"><value>online only</value></key><key name="order_distance"><value>Distance</value></key><key name="order_latest_activity"><value>Latest Activity</value></key><key name="order_recently_joined"><value>Recently Joined</value></key><key name="photo_gallery"><value>Photo Gallery</value></key><key name="profile_details"><value>Profile Details</value></key><key name="quick_search"><value>Quick Search</value></key><key name="quick_search_button_label"><value>Quick Search button text</value></key><key name="quick_search_settings"><value>Quick Search Settings</value></key><key name="recently_joined"><value>Recently joined</value></key><key name="removefriend_complete_message"><value>Friendship cancelled</value></key><key name="save"><value>Save</value></key><key name="search_label_sex"><value>I am</value></key><key name="search_result"><value>Search Result</value></key><key name="settings_saved"><value>Settings was saved.</value></key><key name="sort_setting"><value>Sort Settings</value></key><key name="unblock_complete_message"><value>User unblocked</value></key><key name="unfollow_complete_message"><value>You are no longer following {$displayName}</value></key><key name="user_list"><value>User List</value></key><key name="user_list_join_date"><value>Join Date</value></key><key name="view_settings"><value>View Settings</value></key><key name="with_photo"><value>with photo</value></key>
+	
+
+<key name="order_match_compatibitity"><value>Match Compatibility</value></key>
+<key name="match_compatibitity"><value>Match compatibility</value></key>
+
+<key name="match_compatibitity_description"><value>Available if "Matchmaking" plugin is installed</value></key>
+<key name="distance_description"><value>Available if "Google Map Location" plugin is installed</value></key>
+
+<key name="mobile_no_users_txt"><value>No people found. Please try a different search for more results.</value></key>
+
+<key name="search_options"><value>Search Options</value></key>
+<key name="enable_username_search"><value>Enable search by Username</value></key>
+<key name="username"><value>Username</value></key>
+<key name="search_by_username"><value>Search by Username</value></key>
+<key name="profile_field_setting"><value>Profile field settings</value></key>
+<key name="setting_saved"><value>Setting saved.</value></key>
+<key name="highlighted_roles"><value>Highlighted roles</value></key>
+<key name="online"><value>Online</value></key>
+<key name="online_status_online"><value>Online</value></key>
+<key name="account_type"><value>Account type</value></key>
+<key name="search"><value>Search</value></key>
+<key name="members"><value>Members</value></key>
+<key name="mobile_menu_item_members"><value>Members</value></key>
+
+<key name="other_settings"><value>Other settings</value></key>
+<key name="restrict_search_to_different_account_type"><value>Restrict search to different account type</value></key>
+<key name="search_result_avatar_background_color"><value>Avatar background color</value></key>
+<key name="search_result_avatar_background_color_mobile"><value>Avatar background color (mobile)</value></key>
+<key name="search_result_avatar_highlight_color"><value>Avatar highlight color</value></key>
+<key name="search_result_avatar_highlight_color_mobile"><value>Avatar highlight color (mobile)</value></key>
+<key name="search_result_avatar_size"><value>Avatar size</value></key>
+<key name="show_button_on_search_result"><value>Show button on search result</value></key>
+<key name="show_join_date_on_search_result"><value>Show last activity on search result</value></key>
+<key name="show_last_activity_on_search_result"><value>Show join date on search result</value></key>
+<key name="show_gender_and_age"><value>Show gender and age</value></key>
+<key name="button_color"><value>Button color</value></key>
+<key name="button_size"><value>Button size</value></key>
+<key name="show_new_label"><value>Show new label since join for (seconds)</value></key>
+<key name="new_label_color"><value>New label color</value></key>
+<key name="video_call"><value>Video Call</value></key>
+<key name="wink"><value>Wink</value></key>
+<key name="friends_only"><value>Friends only</value></key>
+<key name="no_matter"><value>No matter</value></key>
+<key name="yes"><value>Yes</value></key>
+<key name="no"><value>No</value></key>
+<key name="new"><value>New</value></key>
+<key name="show_searcher_profile"><value>Show the searcher's profile on search result</value></key>
+<key name="you"><value>You</value></key>
+<key name="looking_for"><value>Looking for</value></key>
+<key name="search_result_layout"><value>Search result layout</value></key>
+<key name="updown"><value>Updown</value></key>
+<key name="leftright"><value>Leftright</value></key>
+<key name="show_context_menu_on_avatar"><value>Show context menu on avatar</value></key>
+<key name="my_matches"><value>My matches</value></key>
+
+
+<key name="possible_buttons"><value>Possible buttons</value></key>
+<key name="chat"><value>Chat</value></key>
+<key name="mail"><value>Mail</value></key>
+<key name="virtual_gift"><value>Virtual gift</value></key>
+<key name="invite_to_event"><value>Invite to event</value></key>
+<key name="invite_to_group"><value>Invite to group</value></key>
+<key name="my_events"><value>My events</value></key>
+<key name="create_new_event"><value>Create new event</value></key>
+<key name="create_new_group"><value>Create new group</value></key>
+<key name="invite"><value>Invite</value></key>
+<key name="invited"><value>Invited</value></key>
+<key name="attending"><value>Attending</value></key>
+<key name="joined"><value>Joined</value></key>
+<key name="invitation_sent"><value>Invitation sent.</value></key>
+<key name="can_not_invite_this_user_to_this_event"><value>Can not invite this user to this event.</value></key>
+<key name="can_not_invite_this_user_to_this_group"><value>Can not invite this user to this group</value></key>
+<key name="invite_someone_to_event"><value>Invite {$name} to your event</value></key>
+<key name="invite_someone_to_groups"><value>Invite {$name} to your groups</value></key>
+<key name="you_have_not_created_any_event_yet"><value>You have not created any event yet.</value></key>
+<key name="you_do_not_have_any_groups_yet"><value>You do not have any groups yet.</value></key>
+<key name="online_users"><value>Online users</value></key>
+<key name="featured_users"><value>Featured users</value></key>
+<key name="featured_users_1"><value>Featured users</value></key>
+<key name="enable_featured_users"><value>Enable featured users</value></key>
+<key name="please_login_to_chat"><value>Please login to chat</value></key>
+<key name="mobile_menu_item_featured_users"><value>Featured users</value></key>
+<key name="bookmark"><value>Bookmark</value></key>
+<key name="bookmark_added"><value>Bookmark added</value></key>
+<key name="bookmark_removed"><value>Bookmark removed</value></key>
+<key name="show_page_title"><value>Show page title</value></key>
+<key name="use_gender_option"><value>Use gender option</value></key>
+<key name="use_gender_option_on_quick_search"><value>Use gender option on quick search</value></key>
+<key name="gender"><value>Gender</value></key>
+<key name="number_of_avatar_on_index_widget"><value>Number of avatars on index widget</value></key>
+<key name="avatar_size_on_index_widget"><value>Avatar size on index widget</value></key>
+<key name="show_buttons_on_widget"><value>Show buttons on widget</value></key>
+<key name="latest_activity_users"><value>Latest activity users</value></key>
+<key name="more"><value>More</value></key>
+<key name="lenght_of_display_name"><value>Length of display name</value></key>
+<key name="search_result_cache_life_time"><value>Search result cache life time(seconds)</value></key>
+
+
+<key name="paging_mode"><value>Paging mode</value></key>
+<key name="pages"><value>Pages</value></key>
+<key name="scroll"><value>Scroll</value></key>
+<key name="no_authorized_to_create_event"><value>You are not authorized to create events, please &lt;a href="{$upgradUrl}"&gt;Upgrade Your Membership&lt;/a&gt; here.</value></key>
+<key name="show_age_and_location_on_result_list"><value>Show age and location(need to check birthday and location in Profile Field Setting Page)</value></key>
+<key name="max_length_for_profile_info_display"><value>Max length for profile info display</value></key>
+
+</prefix>

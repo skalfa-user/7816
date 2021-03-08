@@ -1,0 +1,263 @@
+<div class="index_master_page_wrap custom_platinum_pro_index">
+    <div class="ow_page_wrap index_master_page">
+        <div class="ow_page_wrap_in">
+            <div class="ow_page_padding">
+                <div class="ow_site_panel_wrap">
+                    <div class="ow_site_panel">
+                        <div class="ow_logo_wrap">
+                            <a href="{$siteUrl}"></a>
+                        </div>
+                        {component class='BASE_CMP_Console'}
+                    </div>
+                </div>
+
+                {component class='CUSTOMINDEX_CMP_Camera'}
+
+                {if $isUserSearchInstalled}
+                    <div class="horizontal_qs">
+                        <div class="ow_canvas clearfix">
+                            <div class="index_qs_widget">
+                                {component class='CUSTOMINDEX_CMP_QuickSearch'}
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+
+                {if !$isAuthenticated}
+                    <div class="user_counter_join">
+                        <div class="ow_canvas clearfix">
+                            <div class="user_counter_join_block">
+                                <div class="counter">
+                                    {component class='CUSTOMINDEX_CMP_UsersCounter'}
+                                </div>
+
+                                <div class="fb_connect">
+                                    {component class='CUSTOMINDEX_CMP_Fb'}
+                                </div>
+                            </div>
+        
+                            <div class="user_counter_join_block">
+                                {component class='CUSTOMINDEX_CMP_Join'}
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+
+                <div class="ow_canvas clearfix">
+                    <div class="how_we_do_it">
+                        <div class="title">
+                             <!--text_block_section_title-->
+                            {text key='customindex+text_block_section_title'}
+                        </div>
+                        <div class="how_we_do_it_item">
+                            <!--text_block_pic_1-->
+                            <div class="image" style="background-image: url('{text key='customindex+text_block_pic_1'}');"></div>
+                            <h4>
+                                <!--text_block_title_1-->
+                                {text key='customindex+text_block_title_1'}
+                            </h4>
+                            <p>
+                                <!--text_block_cont_1-->
+                                {text key='customindex+text_block_cont_1'}
+                            </p>
+                        </div>
+                        <div class="how_we_do_it_item">
+                            <!--text_block_pic_2-->
+                            <div class="image" style="background-image: url('{text key='customindex+text_block_pic_2'}');"></div>
+                            <h4>
+                                <!--text_block_title_2-->
+                                {text key='customindex+text_block_title_2'}
+                            </h4>
+                            <p>
+                                <!--text_block_cont_2-->
+                                {text key='customindex+text_block_cont_2'}
+                            </p>
+                        </div>
+                        <div class="how_we_do_it_item">
+                            <!--text_block_pic_3-->
+                            <div class="image" style="background-image: url('{text key='customindex+text_block_pic_3'}');"></div>
+                            <h4>
+                                <!--text_block_title_3-->
+                                {text key='customindex+text_block_title_3'}
+                            </h4>
+                            <p>
+                                <!--text_block_cont_3-->
+                                {text key='customindex+text_block_cont_3'}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hottest_users">
+                    <div class="ow_canvas clearfix">
+                        <div class="ow_canvas">
+                            <div class="ow_page circle_user_list clearfix">
+                                <div class="index_users_widget">
+                                    <div class="circle_user_title">
+                                        <!--hotest_users_title-->
+                                        {text key='slpremiumtheme+hotest_users_title'}
+                                    </div>
+                                    {component class="BASE_CMP_UserList" count="11"}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ow_canvas clearfix">
+                    <div class="stories_carousel stories_carousel_top">
+                        <div id="stories_carousel_selector" class="owl-carousel">
+                            <div class="stories_carousel_slide">
+                                <!--story_slider_pic_1-->
+                                <div class="stories_carousel_item stories_carousel_item_img" style="background-image: url('{text key='slpremiumtheme+story_slider_pic_1'}');">
+                                    <span class="img_title">
+                                        <!--story_slider_pic_text_1-->
+                                        {text key='slpremiumtheme+story_slider_pic_text_1'}
+                                    </span>
+                                </div>
+                                <div class="stories_carousel_item stories_carousel_item_text">
+                                    <div class="title clearfix">
+                                        <!--story_slider_title_1-->
+                                        {text key='slpremiumtheme+story_slider_title_1'}
+                                    </div>
+                                    <div class="read_more clearfix">
+                                        <!--story_slider_read_more_1-->
+                                        {text key='slpremiumtheme+story_slider_read_more_1'}
+                                    </div>
+                                    <div class="text clearfix">
+                                        <!--story_slider_cont_1-->
+                                        {text key='slpremiumtheme+story_slider_cont_1'}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stories_carousel_slide">
+                                <!--story_slider_pic_2-->
+                                <div class="stories_carousel_item stories_carousel_item_img" style="background-image: url('{text key='slpremiumtheme+story_slider_pic_2'}');">
+                                    <span class="img_title">
+                                        <!--story_slider_pic_text_2-->
+                                        {text key='slpremiumtheme+story_slider_pic_text_2'}
+                                    </span>
+                                </div>
+                                <div class="stories_carousel_item stories_carousel_item_text">
+                                    <div class="title clearfix">
+                                        <!--story_slider_title_2-->
+                                        {text key='slpremiumtheme+story_slider_title_2'}
+                                    </div>
+                                    <div class="read_more clearfix">
+                                        <!--story_slider_read_more_2-->
+                                        {text key='slpremiumtheme+story_slider_read_more_2'}
+                                    </div>
+                                    <div class="text clearfix">
+                                        <!--story_slider_cont_2-->
+                                        {text key='slpremiumtheme+story_slider_cont_2'}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {if $isPhotoInstalled}
+                    <div class="ow_page_container clearfix">
+                        <div class="ow_page ow_bg_color clearfix">
+                            <div class="index_photo_widget">
+                                {component class='PHOTO_CMP_IndexPhotoList'}
+                            </div>
+                            {$content}
+                        </div>
+                    </div>
+                {/if}
+            </div>
+        </div>
+    </div>
+    <div class="ow_footer footer_banner">
+        <div class="ow_canvas">
+            <div class="footer_bottom_banner">
+                <div class="text">
+                    <!--bottom_banner_cont-->
+                    {text key='slpremiumtheme+bottom_banner_cont'}
+                </div>
+                {component class='BASE_CMP_JoinButton' cssClass='index_join_button'}
+            </div>
+            <div class="ow_page clearfix">
+                <div class="footer_item">
+                    <div class="title">
+                        <!--footer_block_title_1-->
+                        {text key='slpremiumtheme+footer_block_title_1'}
+                    </div>
+                    <div class="footer_menu_links">
+                        {$bottom_menu}
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div class="title">
+                        <!--footer_block_title_2-->
+                        {text key='slpremiumtheme+footer_block_title_2'}
+                    </div>
+                    <!--footer_block_links_2-->
+                    {text key='slpremiumtheme+footer_block_links_2'}
+                </div>
+                <div class="footer_item">
+                    <div class="title">
+                        <!--footer_block_title_3-->
+                        {text key='slpremiumtheme+footer_block_title_3'}
+                    </div>
+                    <!--footer_block_links_3-->
+                    {text key='slpremiumtheme+footer_block_links_3'}
+                </div>
+                <div class="footer_social_item">
+                    <div class="title">
+                        <!--footer_block_title_4-->
+                        {text key='slpremiumtheme+footer_block_title_4'}
+                    </div>
+                    <!--footer_block_soc_links_4-->
+                    {text key='slpremiumtheme+footer_block_soc_links_4'}
+                </div>
+
+                <div class="footer_copyright">
+                    <div class="ow_copyright">
+                        {text key='base+copyright'}
+                    </div>
+                    {$bottomPoweredByLink}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{decorator name='floatbox'}
+
+<script type="text/javascript" src="{$themeStaticUrl}libs/jquery.simpleselect.js"></script>
+<link rel="stylesheet" type="text/css" href="{$themeStaticUrl}/libs/jquery.simpleselect.css" media="all">
+
+<script type="text/javascript" src="{$themeStaticUrl}libs/carouse_owl_carousel2/owl.carousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{$themeStaticUrl}/libs/carouse_owl_carousel2/assets/owl.carousel.min.css" media="all">
+
+<script type="text/javascript" src="{$themeStaticUrl}js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        SmartMenuColor();
+        $(window).scroll(function() {
+            SmartMenuColor();
+        });
+        function SmartMenuColor() {
+            var winScroll = $(window).scrollTop();
+            if (winScroll > 0) {
+                $('.ow_site_panel_wrap').addClass('site_panel_wrap_bg_color');
+            } else {
+                $('.ow_site_panel_wrap').removeClass('site_panel_wrap_bg_color');
+            }
+        }
+
+        $("#stories_carousel_selector").owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            dots: true,
+            autoplay:true,
+            autoplayTimeout:10000,
+            autoplayHoverPause:true,
+            smartSpeed: 500,
+            autoHeight:true
+        });
+    });
+</script>
